@@ -1,0 +1,172 @@
+div .dashside .sidebar-header {
+/* background-color: rgb(41, 111, 167); */
+color: white;
+font-weight: bolder;
+padding: 14px;
+}
+
+div .dashside h3 {
+    color: white;
+}
+
+div.dashside ul {
+    padding: 0px !important;
+}
+
+div.dashside ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+div.dashside ul li {
+    list-style: none;
+    left: -10px;
+}
+
+div.dashside ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+div.dashside ul li a:hover {
+    /* color: #007ad9; */
+    background: rgb(212, 158, 82);
+    text-decoration: underline;
+}
+
+div.dashside ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    background: #6d7fcc;
+}
+
+.dashside .sidebar-nav a {
+    background: #007ad9;
+    color: white;
+    width: 105%;
+}
+
+/* .btn-menu {
+    background-color: rgb(240, 165, 60);
+    color: white;
+    border: none;
+    size: 80px;
+} */
+
+div .dashmain h4 {
+    text-align: center;
+    color: rgb(41, 111, 167);
+}
+
+div .form-group label {
+    font-weight: 600;
+}
+
+div .form-group small {
+    font-weight: 500;
+}
+
+div.dashmain {
+    margin-left: 35%;
+    margin-right: 1%;
+    margin-top: 100px;
+    padding-bottom: 10px;
+    min-height: 100%;
+    position: relative;
+    max-width: 700px;
+}
+
+div.dashside {
+    position: absolute;
+    width: 250px;
+    min-height: 100%;
+    /* background-color: rgb(41, 111, 167); */
+    background-image: linear-gradient(rgb(41, 111, 167), rgb(0, 79, 144));
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+div .dashmain .container-fluid {
+    background: linear-gradient(to right, rgb(255, 177, 68), rgb(255, 161, 29));
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+header .container-fluid {
+    position: absolute;
+}
+
+header a {
+    margin-left: 280px;
+}
+
+header .col {
+    background: linear-gradient(to right, rgb(41, 111, 167), rgb(1, 78, 141));
+    /* margin-bottom: 2px; */
+}
+
+div .btn-menu2 {
+    background-color: rgb(240, 165, 60);
+    color: white;
+    display: none;
+    float: right;
+}
+
+div .row {
+    background: rgb(1, 78, 141);
+}
+
+label[for="bt_menu"] {
+    background-color: rgb(255, 180, 40);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 70px;
+    height: 35px;
+    padding-top: -10px;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+    .dashside {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .dashside ul li {
+        width: 100%;
+        float: none;
+    }
+    div .dashmain {
+        margin-left: 1%;
+        margin-right: 1%;
+        transition: 0.6s;
+    }
+    header a {
+        margin-left: 10%;
+    }
+    #bt_menu:checked~.dashside {
+        margin-left: 0%;
+    }
+}

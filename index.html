@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http:/www.w3.org/1999/xhtml" lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=11 IE=10 IE=9 width=device-width initial-scale=1 maximum-scale=1" name="viewport"
+  />
+  <title>Intranet</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="media/img/favicon.ico">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="media/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="media/css/css.css">
+  <link rel="stylesheet" type="text/css" href="media/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="media/css/sidebar.css">
+
+
+  <script type="text/javascript" src="media/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="media/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="media/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="media/js/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="media/js/slick.min.js"></script>
+  <script type="text/javascript" src="media/js/init.js"></script>
+
+  <script>
+    // var msg = "${msg}";
+    // $(document).ready(function () {
+    //   if (msg) {
+    //     $('#modalMessage').modal().find('.modal-body p').text(msg);
+    //   }
+    // });
+  </script>
+</head>
+
+<body>
+  <div id="wrapper" class="d-flex flex-column">
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <a href="#" title="Suporte Tecnológico"></a>
+          </div>
+          <input class=".btnMenu" type="checkbox" id="bt_menu">
+          <label for="bt_menu"> <i class="fa fa-bars" style="font-size: 30px;"></i></label>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-fill">
+      <!-- Sidebar -->
+      <div class="dashside">
+        <div class="sidebar-header">
+          <h3>Olá, Usuário</h3>
+        </div>
+
+        <!-- <button class="btn-menu">
+          <i class="fa fa-bars fa-lg"></i>
+        </button> -->
+        <div class="panel">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" style="font-size:20px"></i> Aplicações</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" style="font-size:20px"></i> Tokens</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" style="font-size:20px"></i> Serviços</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="backgroundImage"></div>
+
+      <div class="dashmain">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="panel">
+              <h4>CADASTRO DA APLICAÇÃO</h4>
+              <form>
+                <div class="form-group">
+                  <label for="clientId">Sistema</label>
+                  <input type="text" class="form-control" id="systemId" aria-describedby="systemIdHelp" placeholder="Nome do Sistema" />
+                  <small id="systemIdHelp" class="form-text text-muted">Preencha o nome do Sistema.</small>
+                </div>
+                <div class="form-group">
+                  <label for="clientId">Cliente</label>
+                  <input type="text" class="form-control" id="clientId" aria-describedby="clientIdHelp" placeholder="Nome do Cliente" />
+                  <small id="clientIdHelp" class="form-text text-muted">Prencha o nome do Cliente.</small>
+                </div>
+                <div class="form-group">
+                  <label for="clientSecret">Chave Secreta</label>
+                  <input type="text" class="form-control" id="clientSecret" aria-describedby="clientSecretHelp" placeholder="Chave secreta do Cliente"
+                  />
+                  <small id="clientIdHelp" class="form-text text-muted">Preencha uma chave secreta</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-1 col-sm-4 col-md-4 col-lg-4 support">
+          <strong>Suporte Tecnológico
+            <br>3004 0000 (Capital e regiões
+            <br>metropolitanas) ou 0800 000 0000
+            <br>(Demais regiões)</strong>
+        </div>
+        <div class="col-xs-1 col-sm-8 col-md-8 col-lg-8 links">
+          <a href="#" target="_blank" title="Segurança">Segurança</a> |
+          <a href="#" title="Rede de Atendimento">Rede de Atendimento</a> |
+          <a href="#" title="Ajuda">Ajuda</a> |
+          <a href="#" title="Termos e Contratos">Termos e Contratos</a>
+        </div>
+      </div>
+    </div>
+  </footer style="position: relative;">
+  </div>
+  <div id="modalMessage" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mensagem</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary orange" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@
   <title>Intranet</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="media/img/favicon.ico">  
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="media/img/favicon.ico">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="media/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="media/css/css.css">
@@ -23,7 +23,10 @@
   <script type="text/javascript" src="media/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="media/js/jquery.mask.min.js"></script>
   <script type="text/javascript" src="media/js/slick.min.js"></script>
-  <script type="text/javascript" src="media/js/init.js"></script>
+  <script type="text/javascript" src="media/js/init.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 
   <script>
     // var msg = "${msg}";
@@ -43,7 +46,7 @@
           <div class="col">
             <a href="#" title="Suporte Tecnológico"></a>
           </div>
-          <input class=".btnMenu" type="checkbox" id="bt_menu">
+          <input class="btnMenu" type="checkbox" id="bt_menu">
           <label for="bt_menu"> <i class="fa fa-bars" style="font-size: 30px;"></i></label>
         </div>
       </div>
@@ -150,9 +153,13 @@
 
 
   <script>
-
-
-
+    $(function(){
+      $('#bt_menu').on('change', function(){
+        $('.dashside').animate({
+          marginLeft: 0
+        }, 500);
+      });
+    });
   </script>
 
 

@@ -166,7 +166,5 @@ label[for="bt_menu"] {
     header a {
         margin-left: 10%;
     }
-    #bt_menu:checked~.dashside {
-        margin-left: 0%;
-    }
+
 }
